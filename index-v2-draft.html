@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew Conn | Game Producer</title>
+<meta name="description" content="Matthew Conn is a game producer with 15+ years shipping across console, PC, mobile, VR, and Roblox. Carpet Cleaning Simulator: 30M+ plays, 150K daily players.">
+<meta property="og:title" content="Matthew Conn | Game Producer">
+<meta property="og:description" content="Game producer. 15+ years shipping across console, PC, mobile, VR, and Roblox. I build the systems that keep live games alive.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://matthewconn.vercel.app/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Matthew Conn",
+  "jobTitle": "Game Producer",
+  "url": "https://matthewconn.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/matthewconnsol",
+    "https://cursefreestudios.com"
+  ],
+  "knowsAbout": ["Game Production", "Live Ops", "QA Pipelines", "Roblox", "Release Management"]
+}
+</script>
+<style>
+  :root {
+    --bg: #0c0c0f;
+    --panel: #131318;
+    --panel-hover: #17171f;
+    --line: #232329;
+    --fg: #f4f2ec;
+    --body: #d9d6e1;
+    --muted: #a49fb3;
+    --accent: #9d7bff;
+    --accent-soft: rgba(157, 123, 255, 0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: #0c0c0f; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  .glow {
+    position: relative;
+  }
+  .glow::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 560px;
+    background: radial-gradient(620px 340px at 18% -60px, var(--accent-soft), transparent 70%);
+    pointer-events: none;
+  }
+  .wrap { position: relative; max-width: 920px; margin: 0 auto; padding: 88px 24px 96px; }
+
+  /* Hero */
+  .eyebrow {
+    display: flex; align-items: center; gap: 14px;
+    color: var(--accent);
+    font-size: 0.82rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.22em;
+    margin-bottom: 22px;
+  }
+  .eyebrow::after { content: ""; height: 1px; width: 72px; background: var(--accent); opacity: 0.55; }
+  header h1 {
+    font-size: clamp(3.1rem, 10vw, 5.9rem);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  header h1 span { color: var(--accent); }
+  .role {
+    margin-top: 18px;
+    font-size: clamp(1.3rem, 3.4vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--fg);
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.13rem;
+    margin-top: 14px;
+    max-width: 35em;
+  }
+  .tagline strong { color: var(--body); font-weight: 600; }
+
+  /* Sections */
+  section { margin-top: 72px; }
+  .section-head {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 22px;
+  }
+  .section-head h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .section-head::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .about p { margin-bottom: 14px; color: var(--body); font-size: 1.05rem; max-width: 44em; }
+  .about p:last-child { margin-bottom: 0; }
+  .location { color: var(--muted); }
+
+  /* Games */
+  .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .game {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 26px 24px;
+    background: var(--panel);
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+  .game:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    background: var(--panel-hover);
+  }
+  .game .art {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: #000;
+  }
+  .game h3 { font-size: 1.22rem; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .game .stats {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin-bottom: 10px;
+  }
+  .game p { font-size: 0.97rem; margin: 0; color: var(--muted); }
+  .game a { text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Links */
+  ul.links { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+  ul.links a {
+    display: inline-block;
+    border: 1px solid #34343f;
+    border-radius: 999px;
+    padding: 10px 22px;
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.98rem;
+    font-weight: 500;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+  }
+  ul.links a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.88rem;
+    display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between;
+  }
+
+  @media (max-width: 680px) {
+    .wrap { padding: 56px 20px 72px; }
+    section { margin-top: 56px; }
+    .games { grid-template-columns: 1fr; }
+    .game { padding: 22px; }
+    footer { margin-top: 64px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .game { transition: none; }
+    .game:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<div class="glow">
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Game Producer</div>
+    <h1>Matthew <span>Conn</span></h1>
+    <p class="role">I build the systems that keep live games alive.</p>
+    <p class="tagline">The processes, the pipelines, the weekly rhythm players feel but never see.</p>
+  </header>
+
+  <section class="about">
+    <div class="section-head"><h2>About</h2></div>
+    <p>Game producer with 15+ years shipping across console, PC, mobile, VR, and Roblox. I run live games end to end: roadmap, sprint cadence, QA and release management, and the post-launch bug pipeline.</p>
+    <p>My bias on process is simple: add structure where it helps, leave it out where it doesn't. I'm technically hands-on. I can reproduce a bug, read a trace, and write a test case, and I keep engineers and non-technical stakeholders in sync.</p>
+    <p class="location">Based in San Francisco, CA. Open to remote and on-site roles.</p>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Games</h2></div>
+    <div class="games">
+      <div class="game">
+        <img class="art" src="assets/carpet-cleaning-simulator.png" alt="Carpet Cleaning Simulator key art">
+        <h3>Carpet Cleaning Simulator</h3>
+        <div class="stats">30M+ plays · 150,000 daily players · 10K+ concurrent players at peak</div>
+        <p>Roblox live-ops production: roadmap, sprint cadence, QA and release management, and the full post-launch bug pipeline. Reproducing, prioritizing, routing, and verifying fixes before they ship.</p>
+      </div>
+      <div class="game">
+        <img class="art" src="assets/read-only-memories.jpg" alt="2064: Read Only Memories key art" style="object-position: left center">
+        <h3>2064: Read Only Memories</h3>
+        <div class="stats">300,000+ units sold</div>
+        <p>Cyberpunk adventure game across console, PC, and mobile.</p>
+      </div>
+      <div class="game">
+        <img class="art" src="assets/toejam-and-earl-back-in-the-groove.jpg" alt="ToeJam &amp; Earl: Back in the Groove! key art">
+        <h3>ToeJam &amp; Earl: Back in the Groove!</h3>
+        <div class="stats">Executive Producer</div>
+        <p>Production leadership on the revival of a console classic.</p>
+      </div>
+      <div class="game">
+        <img class="art" src="assets/exercise-your-demons.webp" alt="Exercise Your Demons! key art">
+        <h3>Exercise Your Demons!</h3>
+        <div class="stats">Meta Quest</div>
+        <p>Mixed-reality fitness game. <a href="https://www.stridepr.com/2024/10/uploadvr-sweats-it-out-with-matthew-conn-of-exercise-your-demons/">UploadVR interview</a>.</p>
+      </div>
+      <div class="game">
+        <img class="art" src="assets/god-of-riffs.jpg" alt="God of Riffs key art">
+        <h3>God of Riffs</h3>
+        <div class="stats">Meta Quest</div>
+        <p>VR rhythm game produced at Vyersoft, where Matthew was President and Executive Producer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Links</h2></div>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/matthewconnsol">LinkedIn</a></li>
+      <li><a href="https://cursefreestudios.com">Curse Free Studios</a></li>
+      <li><a href="mailto:rocktheax@gmail.com">Email</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>© 2026 Matthew Conn</span>
+    <span>San Francisco, CA</span>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
